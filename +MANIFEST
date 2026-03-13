@@ -1,0 +1,15 @@
+name: prometheus-bhyve-exporter
+version: "0.1.0"
+origin: sysutils/prometheus-bhyve-exporter
+comment: Prometheus exporter for FreeBSD bhyve VMs
+maintainer: ij@unixpimps.net
+www: https://github.com/ijohanne/prometheus-bhyve-exporter
+prefix: /usr/local
+desc: <<EOD
+  Prometheus exporter for FreeBSD bhyve virtual machines managed by vm-bhyve.
+  Exports VM state, CPU/memory allocation, and runtime process metrics.
+EOD
+categories: [sysutils]
+files:
+  /usr/local/bin/prometheus-bhyve-exporter: {perm: 0755}
+  /usr/local/etc/rc.d/bhyve_exporter: {perm: 0755}

@@ -34,6 +34,23 @@ sudo make install
 
 This installs the binary to `/usr/local/bin/` and the rc.d script to `/usr/local/etc/rc.d/`.
 
+### As a package
+
+Build and install as a proper FreeBSD package (shows up in `pkg info`, supports `pkg delete`):
+
+```bash
+git clone https://github.com/ijohanne/prometheus-bhyve-exporter.git
+cd prometheus-bhyve-exporter
+make package
+sudo pkg add prometheus-bhyve-exporter-0.1.0.pkg
+```
+
+To uninstall:
+
+```bash
+sudo pkg delete prometheus-bhyve-exporter
+```
+
 ### Enable and start
 
 ```bash
