@@ -1,0 +1,2 @@
+bin/prometheus-bhyve-exporter
+etc/rc.d/bhyve_exporter

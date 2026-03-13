@@ -19,7 +19,7 @@ install: all
 	install -m 755 port/files/bhyve_exporter.in $(RCDIR)/bhyve_exporter
 
 package: stage
-	pkg create -M +MANIFEST -r $(STAGEDIR) -o .
+	pkg create -M +MANIFEST -p plist -r $(STAGEDIR) -o .
 
 clean:
 	cargo clean
