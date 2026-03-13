@@ -1,7 +1,7 @@
 PREFIX?=	/usr/local
 BINDIR=		$(PREFIX)/bin
 RCDIR=		$(PREFIX)/etc/rc.d
-STAGEDIR?=	$(CURDIR)/stage
+STAGEDIR?=	${.CURDIR}/stage
 VERSION?=	0.1.0
 
 all:
