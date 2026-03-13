@@ -7,6 +7,7 @@ MAINTAINER=	ij@unixpimps.net
 COMMENT=	Prometheus exporter for FreeBSD bhyve VMs managed by vm-bhyve
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	cargo:lang/rust
 

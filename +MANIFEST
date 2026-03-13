@@ -10,6 +10,8 @@ desc: <<EOD
   Exports VM state, CPU/memory allocation, and runtime process metrics.
 EOD
 categories: [sysutils]
+licenselogic: single
+licenses: [MIT]
 files:
   /usr/local/bin/prometheus-bhyve-exporter: {perm: 0755}
   /usr/local/etc/rc.d/bhyve_exporter: {perm: 0755}
